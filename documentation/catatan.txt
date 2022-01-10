@@ -1,0 +1,36 @@
+tokobuku ---> pembeli ---> produk
+backend= nodemon, exspress, nodejs, mysql,cors,body-parsor
+frontend= reactjs, reactnative
+
+npm i -g nodemon
+
+cara buat backend:
+1. bikin folder backend
+2. buka folder di visual studio code
+3. 	buka di terminal 
+	3.1. npm init -y
+	3.2. npm i exspress body-parsers mysql cors
+4. database
+	4.1. pembeli
+		4.1.1 id		-->INT
+		4.1.2 nomor_anggota	--> string
+		4.1.3 nama_anggota	-->string
+		4.1.4 username 		-->string
+		4.1.5 password		-->string
+		4.1.6 created_by_date	-->date
+		4.1.7 update_by_date	-->date
+
+	4.2. produk
+		4.2.1 id
+		4.2.2 judul_buku
+		4.2.3 nomor_buku
+		4.2.4 halaman
+		4.2.5 genre
+		4.2.6 tahun
+		4.2.7 penerbit
+		4.2.8 pengarang
+		4.2.9 isbn
+		4.2.10 harga
+		4.2.11  diskon
+		
+
