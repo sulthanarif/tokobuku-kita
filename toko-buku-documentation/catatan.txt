@@ -34,3 +34,64 @@ cara buat backend:
 		4.2.11  diskon
 		
 
+toko games :
+- pembeli games
+- produk games
+
+install back-end :
+- nodemon
+- express
+- cors
+- body-parser
+- mysql
+
+cara buat backend :
+- buat folder
+- buka vscode
+- npm init -y
+- packge.json muncul
+- npm i express body-parser mysql cors
+
+DATABASE
+========
+
+1. pembeli games :
+- id = int
+- nomor_anggota = string
+- nama = string
+- username = string
+- password = string
+- created = tanggal
+- updated = tanggal
+- role 	= string
+
+2. produk buku :
+- id = int
+- nomor_produk = string
+- judul = string
+- halaman = int
+- genre = string
+- tahun = int
+- penertbit - string
+- pengarang = string
+- ISBN = string
+- harga = int
+- created = tanggal
+- updated = tanggal
+
+user case
+pendaftaran/profile
+login
+register
+beli buku ,pembayaran, keranjang, 3rd api
+searching
+filter buku 
+
+user story
+register
+username:reza ---> halaman profi ---> no telp
+pass: ---> upercase,uniqcase,lowercase
+email: ---> google, facebook, twitter
+
+login:---> username/email, pass
+belibuku ---> pilih buku, buka keranjang,
