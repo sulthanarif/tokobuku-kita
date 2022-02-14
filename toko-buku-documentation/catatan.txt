@@ -1,5 +1,5 @@
 tokobuku ---> pembeli ---> produk
-backend= nodemon, exspress, nodejs, mysql,cors,body-parsor
+backend= nodemon, exspress, nodejs, mysql,cors,body-parser
 frontend= reactjs, reactnative
 
 npm i -g nodemon
@@ -9,7 +9,7 @@ cara buat backend:
 2. buka folder di visual studio code
 3. 	buka di terminal 
 	3.1. npm init -y
-	3.2. npm i exspress body-parsers mysql cors
+	3.2. npm i exspress body-parser mysql cors
 4. database
 	4.1. pembeli
 		4.1.1 id		-->INT
