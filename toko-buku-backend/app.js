@@ -3,14 +3,13 @@
 // Init Env
 require('dotenv').config();
 
-// Init Express
+//  Libraries
 const express = require('express');
 const app = express();
-
-// Init other modules
 const bodyParser = require('body-parser');
 const cors = require('cors');
-
+const {router} = require('./Router/router');
+const {bookRouter} = require('./Router/bookRouter');
 // Init PORT
 const PORT = process.env.PORT || 3000;
 
@@ -23,9 +22,9 @@ app.use(cors(originOptionCors));
 
 // Routing
 
-app.get('/', function(req,res) {
-    res.send('hello world');
-})
+app.use('/', router);
+app.use('/book', bookRouter);
+
 
 // Port Connection
-app.listen(PORT, () => `connect to server on port ${PORT}`)
+app.listen(PORT, () => console.log(`connect to server on port ${PORT}`))
