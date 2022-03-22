@@ -12,7 +12,7 @@ const connectDB = mysql.createConnection({
     host: DBConfig.HOST,
     user: DBConfig.USER,
     password: DBConfig.PASSWORD,
-    db: DBConfig.DB 
+    database: DBConfig.DB 
 })
 
 connectDB.connect((err)=>{
@@ -20,5 +20,5 @@ connectDB.connect((err)=>{
     console.log('connected to database');
 })
 
-module.exports = connectDB;
+module.exports = connectDB; 
 

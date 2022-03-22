@@ -9,7 +9,6 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const {router} = require('./Router/router');
-const {bookRouter} = require('./Router/bookRouter');
 // Init PORT
 const PORT = process.env.PORT || 3000;
 
@@ -23,7 +22,6 @@ app.use(cors(originOptionCors));
 // Routing
 
 app.use('/', router);
-app.use('/book', bookRouter);
 
 
 // Port Connection
