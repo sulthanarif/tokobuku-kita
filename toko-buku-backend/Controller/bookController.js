@@ -6,7 +6,7 @@ const {
 
 class BookController {
     static findAllBooks(req, res) {
-        Book.showAllBook((err, data) => {
+        Book.showAllBooks((err, data) => {
                 if (err) {
                 console.log('controller eror');
             } else {

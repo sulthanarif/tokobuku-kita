@@ -7,7 +7,9 @@
  **/
 
 const mysql = require('mysql');
+
 const DBConfig = require('./db.config');
+
 const connectDB = mysql.createConnection({
     host: DBConfig.HOST,
     user: DBConfig.USER,

@@ -23,8 +23,8 @@ class Book {
         this.update_at = update_at;
 
     }
-    
-    static showAllBook(result) {
+
+    static showAllBooks(result) {
         /**
          * sql connection
          * query sql
@@ -32,12 +32,14 @@ class Book {
          * change to object instance
          */
 
-        let sqlQuery = `select * from book`;
+        let sqlQuery = `SELECT * FROM book`;
         sql.query(sqlQuery, (err, res) => {
             if (err) {
                 console.log(`this is eror =>`, err);
+                result(err, null)
             } else {
                 console.log('result', res);
+                result(null, res);
             }
         })
     }
