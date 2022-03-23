@@ -9,7 +9,7 @@ const {bookRouter} = require('./bookRouter');
 // endpoin home
 router.get('/', Controller.Homepage
 );
-router.use('/book', bookRouter);
+router.use('/books', bookRouter);
 
 
 module.exports ={router};

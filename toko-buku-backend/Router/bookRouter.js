@@ -9,6 +9,11 @@ const {
 
 // endpoin home
 bookRouter.get('/', BookController.findAllBooks);
+// endpoint by ID
+bookRouter.get(`/:id`, BookController.findBookById);
+//  endpoint post 
+
+
 
 module.exports = {
     bookRouter

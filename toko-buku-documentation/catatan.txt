@@ -140,3 +140,15 @@ email: ---> google, facebook, twitter
 
 login:---> username/email, pass
 belibuku ---> pilih buku, buka keranjang,
+
+
+APP.js 
+- deklarasi express
+- deklarasi cors
+
+router dipanggil di app.js
+controller dipanggildo router
+database dipanggil di configDb
+configDb dipanggil di model
+model dipanggil di controller
+
