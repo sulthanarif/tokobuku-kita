@@ -30,6 +30,18 @@ class BookController {
             }
         });
     }
+    static createBook(req, res) {
+        // res.send('create book');
+        const payload = req.body;
+        Book.createNewBook(payload, (err, data) => {
+            if (err) {
+                console.log(`controller error =>`,err);
+            } else {
+                res.json(data);
+            }
+        });
+
+    }
 
 }
 

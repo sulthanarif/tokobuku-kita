@@ -12,6 +12,8 @@ bookRouter.get('/', BookController.findAllBooks);
 // endpoint by ID
 bookRouter.get(`/:id`, BookController.findBookById);
 //  endpoint post 
+bookRouter.post('/new', BookController.createBook);
+
 
 
 

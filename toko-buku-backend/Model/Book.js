@@ -121,6 +121,21 @@ class Book {
       }
     });
   }
+
+  // createBook
+  static createNewBook(data, result) {
+    let sqlQuery = `INSERT INTO book SET ?`;
+    sql.query(sqlQuery, data, (err, res) => {
+      if (err) {
+        console.log(`this is eror =>`, err);
+        result(err, null);
+      } else {
+        console.log(`result`, res);
+        result(null, res);
+      }
+    }); 
+
+  }
 }
 
 module.exports = {
