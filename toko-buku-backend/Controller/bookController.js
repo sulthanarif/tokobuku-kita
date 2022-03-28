@@ -30,6 +30,7 @@ class BookController {
             }
         });
     }
+    //create book
     static createBook(req, res) {
         // res.send('create book');
         const payload = req.body;
@@ -42,6 +43,32 @@ class BookController {
         });
 
     }
+
+    // update book
+    static updateBook(req, res) {     
+        const {id} = req.params;
+        const payload = req.body;
+        Book.updateABook(id, payload, (err, data) => {
+            if (err) {
+                console.log(`controller error =>`,err);
+            } else {
+                res.json(data);
+            }
+        });
+    }
+
+    // delete book
+    static deleteBook(req, res) {
+        const {id} = req.params;
+        Book.deleteABook(id, (err, data) => {
+            if (err) {
+                console.log(`controller error =>`,err);
+            } else {
+                res.json(data);
+            }
+        });
+    }
+
 
 }
 

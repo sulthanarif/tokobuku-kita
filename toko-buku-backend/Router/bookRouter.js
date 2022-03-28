@@ -13,6 +13,10 @@ bookRouter.get('/', BookController.findAllBooks);
 bookRouter.get(`/:id`, BookController.findBookById);
 //  endpoint post 
 bookRouter.post('/new', BookController.createBook);
+// endpoint update  
+bookRouter.put('/update:id', BookController.updateBook);
+// endpoint delete
+bookRouter.delete('/delete:id', BookController.deleteBook);
 
 
 
