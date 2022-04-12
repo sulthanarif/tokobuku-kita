@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tokobuku-kita | online book store</title>
+    <!-- google font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet" />
+
+    <!-- css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- main css -->
+    <link rel="stylesheet" href="../front-bootstrap/css/style.css" />
+</head>
+
+<body>
+    <header id="header" class="header fixed-top" data-scrollto-offset="0">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+                <h1>Tokobuku<span>-kita</span></h1>
+            </a>
+
+            <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link scrollto active" href="books.html">Book collection</a>
+                    </li>
+                    <li class="nav-item"> <a type="button" class="btn btn-primary ms-5 me-3" href="./register.html">
+                            Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a type="button" class="btn btn-secondary" href="./login.html">
+                            Login</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle d-none"></i>
+
+
+
+
+            </nav>
+            <!-- .navbar -->
+        </div>
+    </header>
+    <main>
+        <section class="container book-table">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">product code</th>
+                        <th scope="col">title</th>
+                        <th scope="col">author</th>
+                        <th scope="col">genre</th>
+                        <th scope="col">Publisher</th>
+                        <th scope="col">isbn</th>
+                        <th scope="col">year</th>
+                        <th scope="col">price</th>
+                        <th scope="col">stock</th>
+                        <th scope="col">detail</th>
+                        <th scope="col">update</th>
+                        <th scope="col">delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>B3983</td>
+                        <td>Lebaran</td>
+                        <td>Adiri Ugawan</td>
+                        <td>Horor</td>
+                        <td>DRi</td>
+                        <td>929389389</td>
+                        <td>2001</td>
+                        <td>IDR 560.000</td>
+                        <td>3</td>
+                        <td><a type="button" class="btn btn-primary" href="./detail.html">detail</a></td>
+                        <td><a type="button" class="btn btn-warning" href="./update.html">update</a></td>
+                        <td><a type="button" class="btn btn-danger" href="./delete.html">delete</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>B3983</td>
+                        <td>Lebaran</td>
+                        <td>Adiri Ugawan</td>
+                        <td>Horor</td>
+                        <td>DRi</td>
+                        <td>929389389</td>
+                        <td>2001</td>
+                        <td>IDR 560.000</td>
+                        <td>3</td>
+                        <td><a type="button" class="btn btn-primary" href="./detail.html">detail</a></td>
+                        <td><a type="button" class="btn btn-warning" href="./update.html">update</a></td>
+                        <td><a type="button" class="btn btn-danger" href="./delete.html">delete</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>B3983</td>
+                        <td>Lebaran</td>
+                        <td>Adiri Ugawan</td>
+                        <td>Horor</td>
+                        <td>DRi</td>
+                        <td>929389389</td>
+                        <td>2001</td>
+                        <td>IDR 560.000</td>
+                        <td>3</td>
+                        <td><a type="button" class="btn btn-primary" href="./detail.html">detail</a></td>
+                        <td><a type="button" class="btn btn-warning" href="./update.html">update</a></td>
+                        <td><a type="button" class="btn btn-danger" href="./delete.html">delete</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+    </main>
+
+    <!-- End Header -->
+    <!-- script bootstrap -->
+    <!-- main script -->
+    <script src="../front-bootstrap/js/app.js
+    "></script>
+</body>
+
+</html>

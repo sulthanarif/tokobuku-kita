@@ -138,32 +138,7 @@ class Book {
 
   
   // updateBook
-  static updateABook(ID, data, result) {
-    let sqlQuery = `UPDATE book SET ? WHERE ID = ${ID}`;
-    sql.query(sqlQuery, data, (err, res) => {
-      if (err) {
-        console.log(`this is eror =>`, err);
-        result(err, null);
-      } else {
-        console.log(`result`, res);
-        result(null, res);
-      }
-    });
-  }
-
   // deleteBook
-  static deleteABook(ID, result) {
-    let sqlQuery = `DELETE FROM book WHERE ID = ${ID}`;
-    sql.query(sqlQuery, (err, res) => {
-      if (err) {
-        console.log(`this is eror =>`, err);
-        result(err, null);
-      } else {
-        console.log(`result`, res);
-        result(null, res);
-      }
-    });
-  }
 }
 
 module.exports = {
